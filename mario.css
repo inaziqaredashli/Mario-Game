@@ -7,19 +7,16 @@
     right: 0;
     background: rgb(91, 178, 235);
     background: linear-gradient(180deg,
-            rgba(91, 178, 235, 1) 0%,
-            rgba(93, 227, 254, 1) 100%);
+      rgba(91, 178, 235, 1) 0%,
+   rgba(93, 227, 254, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .show {
   display: block !important;
 }
 .container {
-  
     position: fixed;
     top: 0;
     right: 0;
@@ -150,3 +147,49 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+
+.scoress {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(83, 71, 71, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+  }
+
+.killedEnemiesClass{
+  position: fixed;
+  top: 42px;
+    left: 8px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(83, 71, 71, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+}
+
+.wallBlocks{
+  display: flex;
+  position: fixed;
+  left: 400px;
+  bottom: 400px
+}
+.wallBlocks .block{
+  width: 60px;
+  height: 60px;
+  background-image: url('../assets/wall.webp');
+}
+
+.goobmasisi{
+  position: absolute;
+  bottom: 248px;
+  transition: bottom .04s ease;
+  width: 80px;
+  height: auto;
+}
