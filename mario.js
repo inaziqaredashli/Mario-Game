@@ -7,6 +7,8 @@ let x = 50
 let y = 250
 let moving = false
 let jumping = false
+let score = 0
+let killedEnemiess = 0
 mario.style.left = x + 'px'
 mario.style.bottom = y + 'px'
 startGameBTN.addEventListener('click', function () {
@@ -20,6 +22,18 @@ startGameBTN.addEventListener('click', function () {
     }, 1000);
 
 })
+function updateScores(points) {
+score += points
+document.getElementById('scores').innerText = "Scores:" + " " + score;
+}
+updateScores(2)
+
+function numberOfKilledEnemies(killedPoints) {
+killedEnemiess += killedPoints
+document.getElementById("killdEnemies").innerText = "Killed Enemies:" + " " + killedEnemiess;
+}
+numberOfKilledEnemies(1)
+
 function walk(step) {
     x += step
     mario.style.left = x + 'px'
