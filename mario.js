@@ -245,3 +245,19 @@ function jumpPose() {
 
 }
 
+function checkCollision(x, y) {
+    let m = y.getBoundingClientRect();
+    let w = x.getBoundingClientRect();
+    console.log("mario Top " + m.top);
+    console.log("wall Bottom " + w.bottom);
+  
+    // return w.left < m.right && w.bottom < m.top;
+    if (w.left < m.right && w.right > m.left) {
+      if (w.bottom < m.top) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+
