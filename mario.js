@@ -8,6 +8,7 @@ let y = 250
 let moving = false
 let jumping = false
 let score = 0
+let goombaMove = false
 let killedEnemiess = 0
 mario.style.left = x + 'px'
 mario.style.bottom = y + 'px'
