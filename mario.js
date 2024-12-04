@@ -1,3 +1,4 @@
+const points = document.querySelector('.score')
 const startGameBTN = document.querySelector('.btn')
 const introPage = document.querySelector('.intro')
 const gamePage = document.querySelector('.container')
